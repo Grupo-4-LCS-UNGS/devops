@@ -5,7 +5,7 @@ name: Deploy PostgreSQL
 on:
   push:
     branches:
-      - devops 
+      - main 
 
 jobs:
   setup:
