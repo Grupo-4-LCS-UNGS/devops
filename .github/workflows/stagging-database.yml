@@ -30,4 +30,4 @@ jobs:
         #     EMAIL_SMTP_USER: ${{ secrets.EMAIL_SMTP_USER }}
         #     EMAIL_SMTP_PASSWORD: ${{ secrets.EMAIL_SMTP_PASSWORD }}
         #     EMAIL_SMTP_SERVER: ${{ secrets.EMAIL_SMTP_SERVER }}
-          run: docker-compose -f docker-compose-potus.yml -p  g4-db -d
+          run: docker-compose -f docker-compose-potus.yml -p g4-db up -d
