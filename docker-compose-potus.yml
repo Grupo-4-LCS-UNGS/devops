@@ -24,7 +24,7 @@ services:
       - "80"
     restart: unless-stopped
 
-   metabase:
+  metabase:
     image: metabase/metabase:latest
     container_name: g4-metabase
     hostname: g4-metabase
