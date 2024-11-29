@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define la variable del host
-HOST="https://api.g4.potus.ar"
+HOST="https://api.eltransportador.loge.ar"
 
 
 
@@ -84,7 +84,7 @@ curl -X POST "${HOST}/modelos_vehiculos/" \
 }'
 
 
-curl -X POST 'https://api.g4.potus.ar//vehiculos/alta' \
+curl -X POST 'https://api.eltransportador.loge.ar/vehiculos/alta' \
   --header 'Content-Type: application/x-www-form-urlencoded' \
   --data 'modelo=1' \
   --data 'patente=ABC123' \
@@ -92,7 +92,7 @@ curl -X POST 'https://api.g4.potus.ar//vehiculos/alta' \
   --data 'estado=Disponible'
 
 
-curl -X POST 'https://api.g4.potus.ar//vehiculos/alta' \
+curl -X POST 'https://api.eltransportador.loge.ar/vehiculos/alta' \
   --header 'Content-Type: application/x-www-form-urlencoded' \
   --data 'modelo=1' \
   --data 'patente=ABC124' \
@@ -100,7 +100,7 @@ curl -X POST 'https://api.g4.potus.ar//vehiculos/alta' \
   --data 'estado=Disponible'
 
 
-  curl -X POST 'https://api.g4.potus.ar//vehiculos/alta' \
+  curl -X POST 'https://api.eltransportador.loge.ar/vehiculos/alta' \
   --header 'Content-Type: application/x-www-form-urlencoded' \
   --data 'modelo=1' \
   --data 'patente=ABC125' \
@@ -112,7 +112,7 @@ curl -X POST 'https://api.g4.potus.ar//vehiculos/alta' \
 
 # Repuestos
 
-curl -X POST 'https://api.g4.potus.ar//repuestos/' \
+curl -X POST 'https://api.eltransportador.loge.ar/repuestos/' \
   --header 'Content-Type: application/json' \
   --data-raw '{
   "id_modelo_vehiculo": 1,
@@ -125,7 +125,7 @@ curl -X POST 'https://api.g4.potus.ar//repuestos/' \
 
 
 
-curl -X POST 'https://api.g4.potus.ar//repuestos/' \
+curl -X POST 'https://api.eltransportador.loge.ar/repuestos/' \
   --header 'Content-Type: application/json' \
   --data-raw '{
   "id_modelo_vehiculo": 1,
@@ -138,7 +138,7 @@ curl -X POST 'https://api.g4.potus.ar//repuestos/' \
 
 
 #Proveedores
-curl -X POST 'https://api.g4.potus.ar//proveedores/' \
+curl -X POST 'https://api.eltransportador.loge.ar/proveedores/' \
   --header 'Content-Type: application/json' \
   --data-raw '{
   "nombre": "Pirelli",
@@ -148,7 +148,7 @@ curl -X POST 'https://api.g4.potus.ar//proveedores/' \
   "email": "info@pirelli.com"
 }' 
  
-curl -X POST 'https://api.g4.potus.ar//proveedores/' \
+curl -X POST 'https://api.eltransportador.loge.ar/proveedores/' \
   --header 'Content-Type: application/json' \
   --data-raw '{
   "nombre": "Lubricantes YPF",
@@ -161,7 +161,7 @@ curl -X POST 'https://api.g4.potus.ar//proveedores/' \
 
 #Precios de repuestos
 
-curl -X POST 'https://api.g4.potus.ar/precios' \
+curl -X POST 'https://api.eltransportador.loge.ar/precios' \
   --header 'Content-Type: application/json' \
   --data-raw '{
 "id_proveedor": 2,
